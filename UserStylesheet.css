@@ -1,0 +1,189 @@
+/* ==UserStyle==
+@name           ASOBITICKET_v1_UltraFast
+@namespace      github.com/ATRS8268
+@version        1.0.0
+@description    ASOBITICKET UI Optimizetion And Delete Animation
+@author         ATRS8268
+==/UserStyle== */
+
+@-moz-document url-prefix("https://asobiticket.asobistore.jp/order/") {
+    .l--animate-component, .l--dynamic-choice-window .l--dynamic-choice__contents__container{
+        animation: none;
+        transform: none;
+        transition: unset;
+
+    }
+    .l--dynamic-choice__contents__container{
+        pointer-events: auto;
+    }
+    .t-order-performance__container, .t-order-seat_select__container > form, .t-order-confirm__container, .t-order-confirm__container > form, .t-order-quantity_select__container > form > .l--dynamic-choice{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .t-order-confirm__container{
+        margin-top: 2em;
+    }
+    .t-order-quantity_select__container > form,.t-order-payment_receipt_select__container > form{
+        flex-wrap: wrap-reverse;
+        display: flex;
+    }
+    .t-order-quantity_select__container > form > .l--dynamic-choice, .t-order-payment_receipt_select__container > form > .l--dynamic-choice{
+        flex: 1 0 50%;
+    }
+    .t-order-payment_receipt_select__container > form > .l--dynamic-choice > .l--dynamic-choice__index > .l--dynamic-choice__btn{
+        width: 98%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .t-order-quantity_select__container > form > .m-btns, .t-order-payment_receipt_select__container > form > .m-btns{
+        flex: 1 0 100%;
+    }
+    .l--dynamic-choice__index{
+        justify-content: center;
+    }
+    .l--dynamic-choice__txt, .l--dynamic-choice__btn{
+        margin: 0;
+    }
+    .t-order-performance__container{
+        margin-top: 10em;
+    }
+    .o-order-form-seat_select__choices{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 2em;
+    }
+    .o-fields, .m-field.m--vertical-composition .m-field.m--vertical-composition .m-field__container, .a-input.m--text.l--only-number-filter.m--captcha{
+        display: flex;
+    }
+    .o-fields{
+        justify-content: center;
+    }
+    .m-field__node.m--value{
+        flex-flow: column;
+        justify-content: center;
+        text-align: center;
+        align-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+    .asobi_footer, .asobi_header_global_secondary, .asobi_header_local{
+        display: none;
+    }
+    .a-subscual:before{
+        padding-top: 25%;
+    }
+    .a-subscual{
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .l--animate-component.m--hiding{
+        opacity: 1;
+        top: auto;
+    }
+    .l--dynamic-choice__btn{
+        user-select: none;
+    }
+    .o-order-form-seat_select__choices > .l--dynamic-choice{
+        margin: 0.2em;
+        flex-grow: 1;
+        text-align: right;
+    }
+    .o-order-form-seat_select__choices > .l--dynamic-choice > .l--dynamic-choice__label{
+        position: absolute;
+        top: 2.55em;
+        left: 1em;
+    }
+    .t-order-quantity_select__container > form > .l--dynamic-choice > .l--dynamic-choice__index > .l--dynamic-choice__txt, .o-order-form-seat_select__choices > .l--dynamic-choice > .l--dynamic-choice__index > .l--dynamic-choice__txt{
+        width: 25%;
+        white-space: nowrap;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .t-order-quantity_select__container > form > .l--dynamic-choice > .l--dynamic-choice__index > .l--dynamic-choice__btn, .o-order-form-seat_select__choices > .l--dynamic-choice > .l--dynamic-choice__index > .l--dynamic-choice__btn{
+        width: 70%;
+        white-space: nowrap;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .t-order-quantity_select__container > form > .l--dynamic-choice > .l--dynamic-choice__value{
+        position: absolute;
+        top: 3.5em;
+        right: 1em;
+    }
+    .t-order-quantity_select__container > form > .l--dynamic-choice > .l--dynamic-choice__value > .a-paragraph{
+        margin: 0;
+        text-align: right;
+    }
+    .t-order-quantity_select__container > form > .l--dynamic-choice > .l--dynamic-choice__index{
+        margin-top: 1em;
+    }
+    .l--dynamic-choice__contents__container{
+        text-align: center;
+    }
+    .l--dynamic-choice-window > .l--dynamic-choice__contents{
+        align-items: start;
+        margin-top: 15em;
+    }
+    .m-field__node > img{
+        width: 100%;
+        height: auto;
+    }
+    .t-order-quantity_select__container > .m-notice{
+        display: none;
+    }
+    .o-order-form-seat_select__choices > .l--dynamic-choice > .l--dynamic-choice__value{
+        height: 1.65em;
+    }
+    .t-order_payment-lot_select_credit__container > form[action="https://asobiticket.asobistore.jp/order_payment/lot_select_credit"] > .m-btns > .m-btns__container{
+        position: absolute;
+        top: -28em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .t-order_payment-lot_select_credit__container > h1.a-heading{
+        margin-bottom: 4.3em;
+    }
+    .t-identification-input__container > form, .t-identification-input__container > form > .o-fields > .o-fields__container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .t-identification-input__container > .a-heading{
+        margin: 0;
+    }
+    .t-order-quantity_select_buy__container > form{
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .t-order-quantity_select_buy__container > form > .l--dynamic-choice, .t-order-quantity_select_buy__container > form > .o-fields{
+        flex: 1 0 50%;
+    }
+    .t-order-quantity_select_buy__container > form > .m-btns{
+        flex: 1 0 100%;
+    }
+    .t-order-quantity_select_buy__container > form > .l--dynamic-choice{
+        display: flex;
+        flex-flow: column-reverse;
+    }
+    .t-order-quantity_select_buy__container > .m-notice{
+        display: none;
+    }
+    .t-order-quantity_select_buy__container > form > .l--dynamic-choice > .l--dynamic-choice__index > .l--dynamic-choice__btn{
+        width: 98%;
+        text-align: center;
+        box-sizing: border-box;
+        margin-bottom: 4em;
+        margin-top: 1em;
+    }
+    .t-order-quantity_select_buy__container > form > .l--dynamic-choice > .l--dynamic-choice__value{
+        position: absolute;
+        top: 3.2em;
+        right: 0; 
+    }
+    .t-order-quantity_select_buy__container > form > .o-fields > .o-fields__container > .m-field > .m-field__container > .m-field__node{
+        padding: 0.1em 0.7em;
+        margin-bottom: 0.3em;
+        font-weight: bold;
+        box-sizing: border-box;
+    }
+}
